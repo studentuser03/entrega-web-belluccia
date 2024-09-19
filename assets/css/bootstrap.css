@@ -9,7 +9,7 @@
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
-  --red: #dc3545;
+  --red: #ffa631;
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
@@ -18,12 +18,12 @@
   --white: #fff;
   --gray: #777;
   --gray-dark: #343a40;
-  --primary: #ee1515;
+  --primary: #ffad1e;
   --secondary: #777;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
-  --danger: #dc3545;
+  --danger: #ff7b22;
   --light: #f8f9fa;
   --dark: #343a40;
   --breakpoint-xs: 0;
@@ -67,10 +67,15 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #777;
+  color: #ebebeb;
   text-align: left;
   background-color: #212121;
 }
+
+.text-primary-mb-3 {
+  color: #ff8623;
+}
+
 
 .columnabeige{
 color: #c5baaa;
@@ -217,7 +222,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
-  padding-left: 10px;
+  
 }
 
 svg {
@@ -394,7 +399,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 @media (max-width: 1200px) {
@@ -404,7 +409,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 @media (max-width: 1200px) {
@@ -628,8 +633,18 @@ pre code {
   margin-left: auto;
 }
 
-.container3lineas{
+.container3filas {
   width: 100%;
+  background-color: #c5baaa;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
+
+.container3lineas{
+  
   background-color: #c5baaa;
   padding-right: 15px;
   padding-left: 15px;
@@ -637,6 +652,36 @@ pre code {
   margin-left: auto;
   padding-top: 40px;
 }
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+  padding-inline: 2rem;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.espacio  {
+  padding: 5rem;
+
+}
+.container3lineas {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerbeige  {
+  background-color: #c5baaa;
+  padding: 7rem;
+}
+
 
 @media (min-width: 576px) {
   .container {
@@ -770,6 +815,7 @@ pre code {
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
+  padding: 1.5rem;
 }
 
 .order-first {
@@ -9494,9 +9540,7 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
-.text-primary {
-  color: #ee1515 !important;
-}
+
 
 a.text-primary:hover, a.text-primary:focus {
   color: #aa0c0c !important;

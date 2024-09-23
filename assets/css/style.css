@@ -24,6 +24,15 @@
 /*-----------------------------------
     1 - Header
 ------------------------------------*/
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
 header {
   background-color: rgb(49, 49, 49);
   color: #fff;
@@ -324,9 +333,15 @@ form button.btn-primary:hover {
 }
 
 .title .title-blue {
-  color: #212121;
+  color: #ff8623;
  
 }
+
+.p-blanco {
+  color: #c5baaa;
+
+}
+
 
 .title .title-primary {
   color: #212121;
@@ -336,7 +351,11 @@ form button.btn-primary:hover {
   color: #212121;
 }
 
+.epacio {
 
+  margin: 0 auto;
+  
+}
 
 .services .title {
   margin-bottom: 20px;
@@ -386,9 +405,14 @@ form button.btn-primary:hover {
 }
 
 .featured-big {
-  position: absolute;
+  position: relative;
   
   right: 0;
+}
+
+.col-md-6 {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .featured-small {
@@ -649,6 +673,10 @@ form button.btn-primary:hover {
   right: -50%;
 }
 
+.zoom-in-h3 {
+  color: #ff8623;
+}
+
 .single-pricing:hover .btn {
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
 }
@@ -657,20 +685,20 @@ form button.btn-primary:hover {
     1 - Testimonials
 ------------------------------------*/
 .testimonial-and-clients {
-  background: url(../images/test-clients-bg.png) center center/cover no-repeat #212121;
+  background: url(../images/fondo-desliza.png) center center/cover no-repeat #212121;
   padding-top: 5rem;
 }
 
 .testimonials {
   padding: 95px 0 85px;
   color: #fff;
-  border-bottom: 1px solid #26264b;
+  border-bottom: 1px solid #ffffff;
 }
 
 .testimonials .test-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  
   margin: 0 auto;
   overflow: hidden;
 }
@@ -679,7 +707,7 @@ form button.btn-primary:hover {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 90px;
+  height: 100%;
 }
 
 .testimonials h5 {
@@ -707,7 +735,7 @@ form button.btn-primary:hover {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #26264b;
+  background-color: #ffffff;
   margin-bottom: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -723,7 +751,7 @@ form button.btn-primary:hover {
 .test-pagination span.swiper-pagination-bullet-active {
   width: 12px;
   height: 12px;
-  background-color: white;
+  background-color: #ff8623;
 }
 
 /*-----------------------------------
@@ -919,12 +947,12 @@ span {
 ------------------------------------*/
 .foot-note {
   padding: 35px 0;
-  background-color: #ee1515;
-  color: #26264b;
+  background-color: #ff8623;
+  color: #000000;
 }
 
 .foot-note a {
-  color: #26264b;
+  color: #000000;
 }
 
 .foot-note a:last-child {

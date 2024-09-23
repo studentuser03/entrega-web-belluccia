@@ -41,7 +41,7 @@
   .navbar-collapse .nav-link::before {
     content: "\f0d8";
     font-family: FontAwesome;
-    color: #de1f1f;
+    color: #ff8623;
     position: absolute;
     bottom: 7px;
     line-height: 0;
@@ -55,7 +55,7 @@
     content: "";
     width: 0;
     height: 4px;
-    background-color: #de1f1f;
+    background-color: #ff8623;
     position: absolute;
     left: 50%;
     bottom: 0;

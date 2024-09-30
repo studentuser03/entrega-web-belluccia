@@ -54,7 +54,7 @@ header::after {
 }
 
 .nav-link {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "inter", sans-serif;
   text-transform: uppercase;
 }
 
@@ -67,7 +67,7 @@ header::after {
 }
 
 .contact i {
-  color: #ee1515;
+  color: #ff8623;
   margin-right: 10px;
 }
 
@@ -172,12 +172,35 @@ form button.btn-primary:hover {
 /*-----------------------------------
     1 - Hero
 ------------------------------------*/
+
+@media only screen and (max-width: 400px) {
+  
+  /* For width smaller than 400px: */
+.hero {
+  background: url("../images/fondoheader-movile.jpg");
+}
+}
+
+
 .hero {
   background: url("../images/fondoheader.jpg") no-repeat center;
   background-size: cover;
   overflow: hidden;
   position: relative;
   z-index: 0;
+}
+
+
+/* For devices smaller than 400px: */
+.hero {
+  background-image: url("../images/fondoheader-movile.jpg");
+}
+
+/* For devices 400px and larger: */
+@media only screen and (min-device-width: 400px) {
+  .hero {
+    background-image: url("../images/fondoheader.jpg");
+  }
 }
 
 .hero .container {
@@ -318,10 +341,7 @@ form button.btn-primary:hover {
 /*-----------------------------------
     1 - Services
 ------------------------------------*/
-.title {
-  font-weight: 700;
-  text-transform: uppercase;
-}
+
 
 .title h6 {
   letter-spacing: 4px;
@@ -339,9 +359,12 @@ form button.btn-primary:hover {
 
 .p-blanco {
   color: #c5baaa;
-
+  padding-bottom: 2rem;
 }
 
+.testimonial-and-clients  {
+margin-top: 2rem;
+}
 
 .title .title-primary {
   color: #212121;
@@ -376,7 +399,7 @@ form button.btn-primary:hover {
     1 - Featured
 ------------------------------------*/
 .featured {
-  padding: 80px 0;
+  padding-top: 40px;
   background-color: #212121;
 }
 
@@ -398,10 +421,23 @@ form button.btn-primary:hover {
   margin-top: 80px;
 }
 
+
+.titulo-desliza
+{ padding-top: 70px;}
+
+@media only screen and (max-width: 400px) {
+  .titulo-desliza{ padding-top: 40px;}
+}
+
+
+.title
+{
+  padding-top: 60px;
+}
 .featured-img {
   position: relative;
-  height: 530px;
-  margin-top: 60px;
+  
+  margin-top: 20px;
 }
 
 .featured-big {
@@ -495,7 +531,7 @@ form button.btn-primary:hover {
 
 .post-content .post-btn:hover {
   color: #fff;
-  background-color: #ee1515;
+  background-color: #ff8623;
 }
 
 /*-----------------------------------
@@ -961,4 +997,54 @@ span {
 
 .foot-note a.fh5-link {
   margin-left: 0;
+}
+
+
+/* For devices smaller than 400px: */
+.hero {
+  background-image: url("../images/fondoheader-movile.jpg");
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-image: url(../images/fondoheader-movile.jpg); 
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+  .hero { 
+     background-image: url('../images/fondoheader.jpg'); 
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  
+    .logojbl {
+      width: 1%;
+      height: auto;
+    }
+  
+}
+
+
+@media only screen and (max-width: 400px) {
+  
+  .featured-big {
+    width: 160%;
+    height: auto;
+    padding-right: 10rem;
+  }
+  
+
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .featured-img {
+   
+    padding-top: 0;
+    padding-bottom: -15px;
+  }
+  
+
 }
